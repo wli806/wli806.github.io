@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wli806.github.io/archives/29056cd5.html</loc>
+    
+    <lastmod>2024-12-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wli806.github.io/archives/d5515ca9.html</loc>
     
     <lastmod>2024-12-24</lastmod>
@@ -113,6 +122,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://wli806.github.io/tags/Python/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/spider/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -145,6 +168,13 @@
   
   <url>
     <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

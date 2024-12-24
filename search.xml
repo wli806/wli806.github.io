@@ -113,4 +113,34 @@
         <tag>Blog</tag>
       </tags>
   </entry>
+  <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h1 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h1><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="not defined BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h1 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h1><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="image-20241224200630272"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h1 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h1><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="image-20241224201012313"></p>
+<blockquote>
+<p>解决方案：</p>
+<p> <code>pip install lxml</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
+      </tags>
+  </entry>
 </search>
