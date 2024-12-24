@@ -83,6 +83,27 @@
 
   
   <url>
+    <loc>https://wli806.github.io/tags/Hexo/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/Git/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/Fixed/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wli806.github.io/tags/Travel/</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -124,35 +145,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://wli806.github.io/tags/Hexo/</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/tags/Git/</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/tags/Fixed/</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://wli806.github.io/categories/Travel/</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://wli806.github.io/categories/Technology/</loc>
@@ -162,14 +155,14 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Travel/Asia/</loc>
+    <loc>https://wli806.github.io/categories/Travel/</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -183,7 +176,14 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/categories/Travel/Asia/</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
