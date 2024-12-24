@@ -13,7 +13,7 @@
 <li>Harboutfont -&gt; Sentosa Express</li>
 <li>ChinaTown(牛车水)</li>
 </ul>
-<h2 id="Memories"><a href="#Memories" class="headerlink" title="Memories"></a>Memories</h2><p>the flight was taken off on 3rd November at night. Sunday night, nice to have a chance to see the Premier League on the flight. MUN vs CHE. Come on Chelsea~~<br><img src="/./img/MUNvsCHE.jpg" alt="Man united vs Chelsea|center|400"><br> Arrive in the morning, Luckily, the flight arrives early at around 7 am. I was surprised that Changi Airport was such huge and beautiful. Can’t remove my eyes. Also with so many stores. Can not imaging for me tbh. Auckland airport was tine size lol~~~<br><img src="/./img/arrive.jpg" alt="Arrive Singapore|center|400"><br>The cute Singapore Airlines bear.<br><img src="/./img/bear.jpg" alt="Singapore Airline Bear|center|400"><br>After a long flight, finally able to leave the plane and walk in Singapore Changi Airport. I was comparing it with Auckland Airport in mind, then I thought why I am doing this, they are simply not on the same level :)<br><img src="/./img/singapore_airport.jpg" alt="Arrive Changi Airport|center|400"></p>
+<h2 id="Memories"><a href="#Memories" class="headerlink" title="Memories"></a>Memories</h2><p>the flight was taken off on 3rd November at night. Sunday night, nice to have a chance to see the Premier League on the flight. MUN vs CHE. Come on Chelsea~~<br><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/MUNvsCHE.jpg" alt="Man united vs Chelsea|center|400"><br> Arrive in the morning, Luckily, the flight arrives early at around 7 am. I was surprised that Changi Airport was such huge and beautiful. Can’t remove my eyes. Also with so many stores. Can not imaging for me tbh. Auckland airport was tine size lol~~~<br><img src="/./img/arrive.jpg" alt="Arrive Singapore|center|400"><br>The cute Singapore Airlines bear.<br><img src="/./img/bear.jpg" alt="Singapore Airline Bear|center|400"><br>After a long flight, finally able to leave the plane and walk in Singapore Changi Airport. I was comparing it with Auckland Airport in mind, then I thought why I am doing this, they are simply not on the same level :)<br><img src="/./img/singapore_airport.jpg" alt="Arrive Changi Airport|center|400"></p>
 ]]></content>
       <categories>
         <category>Travel</category>
@@ -23,6 +23,94 @@
         <tag>Travel</tag>
         <tag>Asia</tag>
         <tag>Singapore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>挂梯子后git clone报错 -- 已解决</title>
+    <url>/archives/d5515ca9.html</url>
+    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用代理后，会造成Github的clone和push等功能无法正常使用，报错如下所示</p>
+<p><code>fatal: unable to access &#39;https://github.com/sige5193/bittly.git/&#39;: Failed to connect to github.com port 443 after 21095 ms: Couldn&#39;t connect to server</code></p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
+<li><ol>
+<li>检查本机代理端口(待补图)：</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>Setting -&gt; Network &amp; internet -&gt; Proxy -&gt; Use a proxy server -&gt; Edit -&gt; Port<br>当前设备端口 <em>33210</em></p>
+</blockquote>
+<ul>
+<li>2.修改Git代理配置：</li>
+</ul>
+<blockquote>
+<p>使用上述端口id <em>33210</em> 打开git bash进行配置<br>git config –global http.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a><br>git config –global https.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a></p>
+</blockquote>
+<ul>
+<li>3.配置完成后即可进行clone</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Git</tag>
+        <tag>Fixed</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-post插入图片deploy后无法正常显示 - 已解决</title>
+    <url>/archives/ba39c0e4.html</url>
+    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用<code>npm install hexo-asset-image</code>后，即使在config.yml中设置 <code>post_asset_folder: true</code>，还是无法在网页中显示图片(由于之前问题没有截图，使用网上UP复现图片)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/post_error_image.png" alt="error image"></p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
+<li><ol>
+<li>卸载旧的 hexo-asset-image</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>npm uninstall hexo-asset-image</p>
+</blockquote>
+<ul>
+<li><ol start="2">
+<li>使用如下命令下载 hexo-asset-image</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>npm install <a href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a></p>
+</blockquote>
+<ul>
+<li><ol start="3">
+<li>下载完后一直使用相对路径进行图片引用(原因未知，但不报错)</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>例如:<br>source<br>****_posts<br>********demo<br>********demo1<br>************1.jpg<br>********demo1.md<br>********demo.md<br><code>其中demo1和demo是使用hexo n demo &amp;&amp; hexo n demo1创建文件时生成的文件夹，同时还有demo1.md和demo.md生成。在demo1.md中引用图片时，使用![Setting image name](./demo1/1.jpg)</code></p>
+</blockquote>
+<ul>
+<li><ol start="4">
+<li>写完后正常运行<code>hexo cleam &amp;&amp; hexo g &amp;&amp; hexl d</code></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>注：当前可以将图片直接放在.&#x2F;source&#x2F;img&#x2F;文件夹下，如果没有该文件夹可以自行创建，之后使用如下语法调用图片<code>![](./img/xxx.png)</code></li>
+</ol>
+</li>
+</ul>
+<p><img src="/" alt="Technology"></p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Fixed</tag>
+        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
