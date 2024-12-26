@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Singapore</title>
-    <url>/archives/3d2608.html</url>
-    <content><![CDATA[<h2 id="Reason-for-the-travel"><a href="#Reason-for-the-travel" class="headerlink" title="Reason for the travel"></a>Reason for the travel</h2><p>September 2024. I am planning to return to China.Since long time studied and worked in Auckland, it is quite excited for me. Octomber, Air China sent a notification that the plane was delayed. I decided change the schedule and transfer to Singapore. Due to this reason, got the chance to visit Singapore in one day.</p>
-<h2 id="Visiting-rote"><a href="#Visiting-rote" class="headerlink" title="Visiting rote"></a>Visiting rote</h2><ul>
-<li>Changi Airport </li>
-<li>Raffles Palce -&gt; Merlion Park</li>
-<li>Suntec City -&gt; Ya Kun Kaya Toast</li>
-<li>Botanic Gardens</li>
-<li>Orchard</li>
-<li>Harboutfont -&gt; Sentosa Express</li>
-<li>ChinaTown(牛车水)</li>
-</ul>
-<h2 id="Memories"><a href="#Memories" class="headerlink" title="Memories"></a>Memories</h2><p>the flight was taken off on 3rd November at night. Sunday night, nice to have a chance to see the Premier League on the flight. MUN vs CHE. Come on Chelsea~~<br><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/MUNvsCHE.jpg" alt="Man united vs Chelsea|center|400"><br> Arrive in the morning, Luckily, the flight arrives early at around 7 am. I was surprised that Changi Airport was such huge and beautiful. Can’t remove my eyes. Also with so many stores. Can not imaging for me tbh. Auckland airport was tine size lol~~~<br><img src="/./img/arrive.jpg" alt="Arrive Singapore|center|400"><br>The cute Singapore Airlines bear.<br><img src="/./img/bear.jpg" alt="Singapore Airline Bear|center|400"><br>After a long flight, finally able to leave the plane and walk in Singapore Changi Airport. I was comparing it with Auckland Airport in mind, then I thought why I am doing this, they are simply not on the same level :)<br><img src="/./img/singapore_airport.jpg" alt="Arrive Changi Airport|center|400"></p>
-]]></content>
-      <categories>
-        <category>Travel</category>
-        <category>Asia</category>
-      </categories>
-      <tags>
-        <tag>Travel</tag>
-        <tag>Asia</tag>
-        <tag>Singapore</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>挂梯子后git clone报错 -- 已解决</title>
     <url>/archives/d5515ca9.html</url>
     <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用代理后，会造成Github的clone和push等功能无法正常使用，报错如下所示</p>
@@ -57,6 +32,81 @@
         <tag>Hexo</tag>
         <tag>Git</tag>
         <tag>Fixed</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Singapore</title>
+    <url>/archives/3d2608.html</url>
+    <content><![CDATA[<h2 id="Reason-for-the-travel"><a href="#Reason-for-the-travel" class="headerlink" title="Reason for the travel"></a>Reason for the travel</h2><p>September 2024. I am planning to return to China.Since long time studied and worked in Auckland, it is quite excited for me. Octomber, Air China sent a notification that the plane was delayed. I decided change the schedule and transfer to Singapore. Due to this reason, got the chance to visit Singapore in one day.</p>
+<h2 id="Visiting-rote"><a href="#Visiting-rote" class="headerlink" title="Visiting rote"></a>Visiting rote</h2><ul>
+<li>Changi Airport </li>
+<li>Raffles Palce -&gt; Merlion Park</li>
+<li>Suntec City -&gt; Ya Kun Kaya Toast</li>
+<li>Botanic Gardens</li>
+<li>Orchard</li>
+<li>Harboutfont -&gt; Sentosa Express</li>
+<li>ChinaTown(牛车水)</li>
+</ul>
+<h2 id="Memories"><a href="#Memories" class="headerlink" title="Memories"></a>Memories</h2><p>the flight was taken off on 3rd November at night. Sunday night, nice to have a chance to see the Premier League on the flight. MUN vs CHE. Come on Chelsea~~<br><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/MUNvsCHE.jpg" alt="Man united vs Chelsea|center|400"><br> Arrive in the morning, Luckily, the flight arrives early at around 7 am. I was surprised that Changi Airport was such huge and beautiful. Can’t remove my eyes. Also with so many stores. Can not imaging for me tbh. Auckland airport was tine size lol~~~<br><img src="/./img/arrive.jpg" alt="Arrive Singapore|center|400"><br>The cute Singapore Airlines bear.<br><img src="/./img/bear.jpg" alt="Singapore Airline Bear|center|400"><br>After a long flight, finally able to leave the plane and walk in Singapore Changi Airport. I was comparing it with Auckland Airport in mind, then I thought why I am doing this, they are simply not on the same level :)<br><img src="/./img/singapore_airport.jpg" alt="Arrive Changi Airport|center|400"></p>
+]]></content>
+      <categories>
+        <category>Travel</category>
+        <category>Asia</category>
+      </categories>
+      <tags>
+        <tag>Travel</tag>
+        <tag>Asia</tag>
+        <tag>Singapore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>pip install lxml</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>python -m pip install openpyxl</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
+<blockquote>
+<p>解决方案</p>
+<p><code>pip install DrissionPage </code></p>
+</blockquote>
+<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
+<blockquote>
+<p> 解决方案</p>
+<p>pip install scikit-learn</p>
+</blockquote>
+<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
+<blockquote>
+<p>解决方案</p>
+<p>pip install tensorflow</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
       </tags>
   </entry>
   <entry>
@@ -111,46 +161,6 @@
         <tag>Hexo</tag>
         <tag>Fixed</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>抓取汇率遇到的坑</title>
-    <url>/archives/29056cd5.html</url>
-    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
-<blockquote>
-<p>解决方案： 发现是由于我没有安装库导致，</p>
-<p><code>pip install beautifulsoup4 </code></p>
-<p>安装成功后要在代码中import</p>
-<p><code>from bs4 import BeautifulSoup</code></p>
-</blockquote>
-<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
-<blockquote>
-<p>额…运行要用python xxx.py</p>
-</blockquote>
-<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>pip install lxml</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>python -m pip install openpyxl</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
-<blockquote>
-<p>解决方案</p>
-<p><code>pip install DrissionPage </code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>Python</tag>
-        <tag>spider</tag>
       </tags>
   </entry>
   <entry>
