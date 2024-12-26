@@ -7,11 +7,10 @@
 <p>What a nice boxing day!</p>
 <p>With Duran‘s red card.  </p>
 <p>ez win :)</p>
-<p><img src="E:\new_hexo\blog\source_posts\Villa.assets\win.jpg" alt="win"></p>
 ]]></content>
       <categories>
         <category>NUFC</category>
-        <category>24-25</category>
+        <category>2425</category>
       </categories>
       <tags>
         <tag>NUFC</tag>
@@ -79,6 +78,56 @@
       </tags>
   </entry>
   <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>pip install lxml</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>python -m pip install openpyxl</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
+<blockquote>
+<p>解决方案</p>
+<p><code>pip install DrissionPage </code></p>
+</blockquote>
+<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
+<blockquote>
+<p> 解决方案</p>
+<p>pip install scikit-learn</p>
+</blockquote>
+<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
+<blockquote>
+<p>解决方案</p>
+<p>pip install tensorflow</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-post插入图片deploy后无法正常显示 - 已解决</title>
     <url>/archives/ba39c0e4.html</url>
     <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用<code>npm install hexo-asset-image</code>后，即使在config.yml中设置 <code>post_asset_folder: true</code>，还是无法在网页中显示图片(由于之前问题没有截图，使用网上UP复现图片)</p>
@@ -130,56 +179,6 @@
         <tag>Hexo</tag>
         <tag>Fixed</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>抓取汇率遇到的坑</title>
-    <url>/archives/29056cd5.html</url>
-    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
-<blockquote>
-<p>解决方案： 发现是由于我没有安装库导致，</p>
-<p><code>pip install beautifulsoup4 </code></p>
-<p>安装成功后要在代码中import</p>
-<p><code>from bs4 import BeautifulSoup</code></p>
-</blockquote>
-<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
-<blockquote>
-<p>额…运行要用python xxx.py</p>
-</blockquote>
-<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>pip install lxml</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>python -m pip install openpyxl</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
-<blockquote>
-<p>解决方案</p>
-<p><code>pip install DrissionPage </code></p>
-</blockquote>
-<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
-<blockquote>
-<p> 解决方案</p>
-<p>pip install scikit-learn</p>
-</blockquote>
-<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
-<blockquote>
-<p>解决方案</p>
-<p>pip install tensorflow</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>Python</tag>
-        <tag>spider</tag>
       </tags>
   </entry>
   <entry>
