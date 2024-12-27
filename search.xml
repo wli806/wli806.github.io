@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>NUFC vs Villa</title>
-    <url>/archives/d618897d.html</url>
-    <content><![CDATA[<p>Got a big win! 3-0!!! </p>
-<p>What a nice boxing day!</p>
-<p>With Duran‘s red card.  </p>
-<p>ez win :)</p>
-]]></content>
-      <categories>
-        <category>NUFC</category>
-        <category>2425</category>
-      </categories>
-      <tags>
-        <tag>NUFC</tag>
-        <tag>PL</tag>
-        <tag>Football</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Singapore</title>
     <url>/archives/3d2608.html</url>
     <content><![CDATA[<h2 id="Reason-for-the-travel"><a href="#Reason-for-the-travel" class="headerlink" title="Reason for the travel"></a>Reason for the travel</h2><p>September 2024. I am planning to return to China.Since long time studied and worked in Auckland, it is quite excited for me. Octomber, Air China sent a notification that the plane was delayed. I decided change the schedule and transfer to Singapore. Due to this reason, got the chance to visit Singapore in one day.</p>
@@ -78,53 +60,22 @@
       </tags>
   </entry>
   <entry>
-    <title>抓取汇率遇到的坑</title>
-    <url>/archives/29056cd5.html</url>
-    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
-<blockquote>
-<p>解决方案： 发现是由于我没有安装库导致，</p>
-<p><code>pip install beautifulsoup4 </code></p>
-<p>安装成功后要在代码中import</p>
-<p><code>from bs4 import BeautifulSoup</code></p>
-</blockquote>
-<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
-<blockquote>
-<p>额…运行要用python xxx.py</p>
-</blockquote>
-<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>pip install lxml</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>python -m pip install openpyxl</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
-<blockquote>
-<p>解决方案</p>
-<p><code>pip install DrissionPage </code></p>
-</blockquote>
-<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
-<blockquote>
-<p> 解决方案</p>
-<p>pip install scikit-learn</p>
-</blockquote>
-<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
-<blockquote>
-<p>解决方案</p>
-<p>pip install tensorflow</p>
-</blockquote>
+    <title>NUFC vs Villa</title>
+    <url>/archives/d618897d.html</url>
+    <content><![CDATA[<p>Got a big win! 3-0!!! </p>
+<p>What a nice boxing day!</p>
+<p>With Duran‘s red card.  </p>
+<p>ez win :)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/win-1735233411236-3.jpg" alt="win"></p>
 ]]></content>
       <categories>
-        <category>Technology</category>
-        <category>Python</category>
+        <category>NUFC</category>
+        <category>2425</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
-        <tag>Python</tag>
-        <tag>spider</tag>
+        <tag>NUFC</tag>
+        <tag>PL</tag>
+        <tag>Football</tag>
       </tags>
   </entry>
   <entry>
@@ -179,6 +130,56 @@
         <tag>Hexo</tag>
         <tag>Fixed</tag>
         <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>pip install lxml</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>python -m pip install openpyxl</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
+<blockquote>
+<p>解决方案</p>
+<p><code>pip install DrissionPage </code></p>
+</blockquote>
+<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
+<blockquote>
+<p> 解决方案</p>
+<p>pip install scikit-learn</p>
+</blockquote>
+<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
+<blockquote>
+<p>解决方案</p>
+<p>pip install tensorflow</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
       </tags>
   </entry>
   <entry>
