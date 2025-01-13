@@ -468,29 +468,6 @@
       </tags>
   </entry>
   <entry>
-    <title>记录Zoomcamp从0开启ny_taxi表的步骤</title>
-    <url>/archives/1e2fbb3d.html</url>
-    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
-<h2 id="打开git-bash运行postgres-13"><a href="#打开git-bash运行postgres-13" class="headerlink" title="打开git bash运行postgres:13"></a>打开git bash运行postgres:13</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
-
-<h2 id="打开PowerShell"><a href="#打开PowerShell" class="headerlink" title="打开PowerShell"></a>打开PowerShell</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231709168.png" alt="image-20250111231709168"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
-<p>DONE.</p>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>DE</tag>
-        <tag>Bootcamp</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>抓取汇率遇到的坑</title>
     <url>/archives/29056cd5.html</url>
     <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
@@ -538,6 +515,29 @@
         <tag>Blog</tag>
         <tag>Python</tag>
         <tag>spider</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/1e2fbb3d.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="打开git-bash运行postgres-13"><a href="#打开git-bash运行postgres-13" class="headerlink" title="打开git bash运行postgres:13"></a>打开git bash运行postgres:13</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<h2 id="打开PowerShell"><a href="#打开PowerShell" class="headerlink" title="打开PowerShell"></a>打开PowerShell</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231709168.png" alt="image-20250111231709168"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
