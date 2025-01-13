@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>汇率抓取00 - 连载中 | Phoebe Li’s blog</title><meta name="author" content="liwenjie"><meta name="copyright" content="liwenjie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="鉴于当前纽币汇率波动已超过我过往几年的认知😅，准备抓取汇率，看下学到的数分知识有多少用 hhhh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="汇率抓取00 - 连载中">
+<meta property="og:url" content="https://wli806.github.io/archives/6a573e21.html">
+<meta property="og:site_name" content="Phoebe Li’s blog">
+<meta property="og:description" content="鉴于当前纽币汇率波动已超过我过往几年的认知😅，准备抓取汇率，看下学到的数分知识有多少用 hhhh">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224221204064.png">
+<meta property="article:published_time" content="2024-12-24T09:09:58.000Z">
+<meta property="article:modified_time" content="2025-01-08T01:42:25.164Z">
+<meta property="article:author" content="liwenjie">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="spider">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224221204064.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wli806.github.io/archives/6a573e21.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'pub-7630830038422330',
+  enable_page_level_ads: 'true'
+});</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4PX9WC8X8S"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-4PX9WC8X8S')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-4PX9WC8X8S', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":150,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"Author: liwenjie","link":"Link: ","source":"Source: Phoebe Li’s blog","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '汇率抓取00 - 连载中',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/style.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/li.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/wli806/picgo/img/Technology.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Phoebe Li’s blog</span></a><a class="nav-page-title" href="/"><span class="site-name">汇率抓取00 - 连载中</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">汇率抓取00 - 连载中</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-12-24T09:09:58.000Z" title="Created 2024-12-24 22:09:58">2024-12-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-01-08T01:42:25.164Z" title="Updated 2025-01-08 14:42:25">2025-01-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Technology/">Technology</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Technology/Python/">Python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">833</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>3mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>python环境部署 -&gt; 抓取当日汇率 -&gt; 抓取过去一年汇率 -&gt; 数据清洗 -&gt; 进行预测 -&gt; 整合资源</p>
+<h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>使用<strong>PyCharm</strong>，进入后选择<strong>Interpreter</strong>，可以选择new,然后自行安装所需要的module。本文使用如下的库</p>
+<p><code>(.venv) PS G:\nzd&gt; pip install BeautifulSoup4</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install pandas</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install lxml</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install DrissionPage </code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install numpy</code></p>
+<h2 id="编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）"><a href="#编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）" class="headerlink" title="编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）"></a>编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）</h2><p>代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line">name=[]</span><br><span class="line">xianchao_buy_price=[]</span><br><span class="line">xianchao_sell_price=[]</span><br><span class="line">xianhui_buy_price=[]</span><br><span class="line">xianhui_sell_price=[]</span><br><span class="line">date_waihui=[]</span><br><span class="line">time_waihui=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">	<span class="comment">#这个网址的第一页跟其他页的格式稍微有区别，于是做了以下的判断。从0到9对应不同时间的汇率</span></span><br><span class="line">    <span class="keyword">if</span> i==<span class="number">0</span>:</span><br><span class="line">        url = urlopen(<span class="string">&#x27;http://www.boc.cn/sourcedb/whpj/&#x27;</span>) <span class="comment"># 打开html并获取内容</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 从网页看到共10页，所以用index1-9来进行匹配，获取全部的数据</span></span><br><span class="line">        url = urlopen(<span class="string">&#x27;http://www.boc.cn/sourcedb/whpj/index_&#123;&#125;.html&#x27;</span>.<span class="built_in">format</span>(i)) </span><br><span class="line">        web = url.read()</span><br><span class="line">        <span class="comment"># 用 BeautifulSoup 解析网页内容，指定解析器为 lxml</span></span><br><span class="line">        bs_obj = BeautifulSoup(web, features=<span class="string">&#x27;lxml&#x27;</span>)</span><br><span class="line">        <span class="comment"># 在检查中进行搜索，这是第二个table,于是index用了1来选取之后抓取的数据所在的表</span></span><br><span class="line">        t = bs_obj.find_all(<span class="string">&#x27;table&#x27;</span>)[<span class="number">1</span>]</span><br><span class="line">        <span class="comment"># 这是抓取所有的表格中的内容</span></span><br><span class="line">        all_tr = t.find_all(<span class="string">&#x27;tr&#x27;</span>)</span><br><span class="line">        <span class="comment"># 删掉第一行那行title</span></span><br><span class="line">        all_tr.pop(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">for</span> r <span class="keyword">in</span> all_tr:</span><br><span class="line">            all_td=r.find_all(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;新西兰元&#x27;</span> <span class="keyword">or</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;美元&#x27;</span> <span class="keyword">or</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;澳大利亚元&#x27;</span>:</span><br><span class="line">                name.append(all_td[<span class="number">0</span>].text)</span><br><span class="line">                xianhui_buy_price.append(all_td[<span class="number">1</span>].text)</span><br><span class="line">                xianhui_sell_price.append(all_td[<span class="number">3</span>].text)</span><br><span class="line">                xianchao_sell_price.append(all_td[<span class="number">4</span>].text)</span><br><span class="line">                xianchao_buy_price.append(all_td[<span class="number">2</span>].text)</span><br><span class="line">                date_waihui.append(all_td[<span class="number">6</span>].text)</span><br><span class="line">                time_waihui.append(all_td[<span class="number">7</span>].text)</span><br><span class="line"><span class="comment">#抓取的目录，假如还想抓取其他字段的话，新增空列表再append就可以。但目前这个表只有这些字段。</span></span><br><span class="line">test = pd.DataFrame(&#123;<span class="string">&#x27;货币名称&#x27;</span>: name,</span><br><span class="line">                     <span class="string">&#x27;发布日期&#x27;</span>: date_waihui,</span><br><span class="line">                     <span class="string">&#x27;发布时间&#x27;</span>: time_waihui,</span><br><span class="line">                     <span class="string">&#x27;现钞买入价&#x27;</span>: xianchao_buy_price,</span><br><span class="line">                     <span class="string">&#x27;现钞卖出价&#x27;</span> : xianchao_sell_price,</span><br><span class="line">                     <span class="string">&#x27;现汇买入价&#x27;</span>: xianhui_buy_price,</span><br><span class="line">                     <span class="string">&#x27;现汇卖出价&#x27;</span>: xianhui_sell_price&#125;)</span><br><span class="line">test.to_excel(<span class="string">r&#x27;E:\change_rate_spider\waihui.xlsx&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）"><a href="#抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）" class="headerlink" title="抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）"></a>抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> DrissionPage <span class="keyword">import</span> ChromiumPage</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_table</span>(<span class="params">page</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;解析页面中的表格数据&quot;&quot;&quot;</span></span><br><span class="line">    soup = BeautifulSoup(page.html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    target_div = soup.find(<span class="string">&#x27;div&#x27;</span>, class_=<span class="string">&#x27;BOC_main publish&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> target_div:</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到指定的表格容器&quot;</span>)</span><br><span class="line">    tbody_tag = target_div.find(<span class="string">&#x27;tbody&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> tbody_tag:</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到表格数据&quot;</span>)</span><br><span class="line"></span><br><span class="line">    tr_tags = tbody_tag.find_all(<span class="string">&#x27;tr&#x27;</span>)</span><br><span class="line">    data_list = []</span><br><span class="line">    <span class="keyword">for</span> tr <span class="keyword">in</span> tr_tags:</span><br><span class="line">        td_tags = tr.find_all(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(td_tags) == <span class="number">7</span>:</span><br><span class="line">            row_data = [td.text.strip() <span class="keyword">for</span> td <span class="keyword">in</span> [td_tags[<span class="number">6</span>], td_tags[<span class="number">1</span>], td_tags[<span class="number">3</span>], td_tags[<span class="number">5</span>]]]</span><br><span class="line">            data_list.append(row_data)</span><br><span class="line">    <span class="keyword">return</span> data_list</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_total_pages</span>(<span class="params">page</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;获取总页数&quot;&quot;&quot;</span></span><br><span class="line">    soup = BeautifulSoup(page.html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    paginator = soup.select_one(<span class="string">&#x27;#list_navigator ol&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> paginator:</span><br><span class="line">        pages = paginator.find_all(<span class="string">&#x27;li&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> li <span class="keyword">in</span> pages:</span><br><span class="line">            <span class="comment"># 找到包含总页数信息的 &lt;li&gt;</span></span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;共&#x27;</span> <span class="keyword">in</span> li.text <span class="keyword">and</span> <span class="string">&#x27;页&#x27;</span> <span class="keyword">in</span> li.text:</span><br><span class="line">                <span class="comment"># 提取数字部分</span></span><br><span class="line">                total_pages = <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(<span class="built_in">filter</span>(<span class="built_in">str</span>.isdigit, li.text)))</span><br><span class="line">                <span class="keyword">return</span> total_pages</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到总页数信息&quot;</span>)</span><br><span class="line">    <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到页码导航栏&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://wli806.github.io">liwenjie</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://wli806.github.io/archives/6a573e21.html">https://wli806.github.io/archives/6a573e21.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Blog/">Blog</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/spider/">spider</a></div><div class="post-share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224221204064.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/archives/d618897d.html" title="Newcastle 3-0 Villa"><img class="cover" src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/win-1735233411236-3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">Newcastle 3-0 Villa</div></div><div class="info-2"><div class="info-item-1">Nice boxing day!</div></div></div></a><a class="pagination-related" href="/archives/29056cd5.html" title="抓取汇率遇到的坑"><img class="cover" src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">抓取汇率遇到的坑</div></div><div class="info-2"><div class="info-item-1">记录抓取汇率项目时遇到的坑</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/archives/29056cd5.html" title="抓取汇率遇到的坑"><img class="cover" src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-24</div><div class="info-item-2">抓取汇率遇到的坑</div></div><div class="info-2"><div class="info-item-1">记录抓取汇率项目时遇到的坑</div></div></div></a><a class="pagination-related" href="/archives/ba39c0e4.html" title="Hexo-post插入图片deploy后无法正常显示 - 已解决"><img class="cover" src="/./img/post_error_image.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-24</div><div class="info-item-2">Hexo-post插入图片deploy后无法正常显示 - 已解决</div></div><div class="info-2"><div class="info-item-1">解决hexo中插入图片无法正常在页面显示的问题</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC82MDMxNy8zNjc4NQ=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2"><span class="toc-number">1.1.</span> <span class="toc-text">环境部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E8%84%9A%E6%9C%AC%EF%BC%8C%E6%8A%93%E5%8F%96%E5%BD%93%E6%97%A5%E6%B1%87%E7%8E%87%EF%BC%88%E5%88%9D%E6%AD%A5%E6%8E%A2%E7%B4%A2%EF%BC%8C%E5%90%8E%E7%BB%AD%E4%B8%8D%E4%BC%9A%E7%BB%A7%E7%BB%AD%E4%BD%BF%E7%94%A8%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%93%E5%8F%96%E8%BF%87%E5%8E%BB%E4%B8%80%E5%B9%B4%E6%B1%87%E7%8E%87%EF%BC%88%E6%AF%8F%E5%A4%A9%E9%83%BD%E6%9C%89%E5%BE%88%E5%A4%9A%E6%9D%A1%EF%BC%8C%E5%BD%93%E5%89%8D%E5%8D%A1%E5%9C%A8%E4%B8%AD%E8%A1%8C%E7%9A%84%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%8C%E6%AF%8F%E6%AC%A1%E6%89%8B%E5%8A%A8%E8%BE%93%E5%85%A5%E2%80%A6%E7%A1%AE%E5%AE%9E%E5%BE%88%E8%A0%A2%E4%BD%86%E6%B2%A1%E6%9C%89%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%B4%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E8%BE%93%E5%85%A5%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By liwenjie</div><div class="footer_custom_text">🥹 问君能有几多愁，恰似一江春水向东流</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+
+  const loadLivere = (el, path) => {
+    window.livereOptions = {
+      refer: path || location.pathname
+    }
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyLivere = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Livere'
+      ? window.shuoshuoComment = { loadComment: loadLivere }
+      : window.loadOtherComment = loadLivere
+    return
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="9213529722" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="true" data-mutex='true'> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

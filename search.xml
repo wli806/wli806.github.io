@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>DE Zoomcamp Week1 Note</title>
+    <url>/archives/5f4dfb75.html</url>
+    <content><![CDATA[<h1 id="Google-Cloud-Platform"><a href="#Google-Cloud-Platform" class="headerlink" title="Google Cloud Platform"></a>Google Cloud Platform</h1><ul>
+<li><p>cloud computing services</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109002231923.png" alt="image-20250109002231923"></p>
+</li>
+</ul>
+<h1 id="Data-pipeline"><a href="#Data-pipeline" class="headerlink" title="Data pipeline"></a>Data pipeline</h1><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108220251131.png" alt="image-20250108220251131"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108220311426.png" alt="image-20250108220311426"></p>
+<p>One Host computer (Windows&#x2F; Mac os&#x2F; Linux) can have multiple containers. Here is one example <em><strong>container</strong></em>.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108221228005.png" alt="image-20250108221228005"></p>
+<p>Also we could have Postgres on either Computer or Docker. Database will not connected on both environment.</p>
+<p>Once we finish a docker container, we can run this on any  Google cloud(Kubernetes) environment.</p>
+<h1 id="Why-should-we-care-about-Docker"><a href="#Why-should-we-care-about-Docker" class="headerlink" title="Why should we care about Docker?"></a>Why should we care about Docker?</h1><ul>
+<li>Reproducibility - 可重复性  * To use in different environments</li>
+<li>Local experiments</li>
+<li>Integration test(CI&#x2F;CD) - 集成测试</li>
+<li>Running pipeline on the could(AWS Batch, Kubernetes jobs)</li>
+<li>Spark</li>
+<li>Serverless(AWS Lambda, Google functions)</li>
+</ul>
+<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><ol>
+<li><p>Open Docker windows Dssktop</p>
+</li>
+<li><p>run <code>docker run hello-world</code> in git bash. It will go to docker hub to find an image called <em>hello-world</em>, download this image and run this image <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109004459727.png" alt="image-20250109004459727"></p>
+</li>
+<li><p>Then we will input <code>docker run -it ubuntu bash</code>.</p>
+<p><code>run</code>: we want to run this image</p>
+<p><code>-it</code>: we want to do this in interactive mode, <code>i</code> means interactive, <code>t</code> means terminal</p>
+<p>this means we want to type something and the docker will react that</p>
+<ol>
+<li><blockquote>
+<p><font color="red"> here may got an error message: </font> <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109011507379.png" alt="image-20250109011507379"></p>
+<p>To solve it, have to follow the steps:*</p>
+<ol>
+<li><p>Open git bash, in <code>~</code> path, locate ~&#x2F;.bashrc file. Cant use <code>ls -a ~</code> to see whether this folder have <em>.bashrc</em> file <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109011936754.png" alt="image-20250109011936754"></p>
+</li>
+<li><p>If not have  <em>.bashrc</em> file, run <code>vim ~/.bashrc</code> in this path. Then will create an empty file.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109012121440.png" alt="image-20250109012121440"></p>
+</li>
+<li><p>Once we get this file it was empty, we have press key <code>i</code> to move into edit mode. Then type in <code>alias docker=&#39;winpty docker&#39;</code> After that press <code>esc</code> exit edit mode. type <code>:wq</code> exit and save the file.</p>
+</li>
+<li><p>run <code>source ~/.bashrc</code> and reopen git bash. DONE!</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109012607339.png" alt="image-20250109012607339"> <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109012531694.png" alt="image-20250109012531694"></p>
+</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p><font color="red"> ISOLATED </font> It means even I use <code>rm -rf / --no-preserve-root</code> to remove everything <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109013239891.png" alt="image-20250109013239891"> It will reversed next time I reopen this docker container</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109013339891.png" alt="image-20250109013339891"></p>
+<h1 id="1-2-2"><a href="#1-2-2" class="headerlink" title="1.2.2"></a>1.2.2</h1><h2 id="Docker-for-python"><a href="#Docker-for-python" class="headerlink" title="Docker for python"></a>Docker for python</h2><h3 id="Run-python"><a href="#Run-python" class="headerlink" title="Run python"></a>Run python</h3><p><code>docker run -it python:3.9</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109013542871.png" alt="image-20250109013542871"></p>
+<h3 id="Download-library"><a href="#Download-library" class="headerlink" title="Download library"></a>Download library</h3><ul>
+<li><p><code>ctrl + d</code> leave python</p>
+</li>
+<li><p>run <code>docker run -it --entrypoint-bash python:3.9</code></p>
+</li>
+<li><p>run <code>pip install pandas</code> </p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109014145737.png" alt="image-20250109014145737"></p>
+<blockquote>
+<p>Things is once we leave this shell and use <code>docker run -it --entrypoint-bash python:3.9</code> back in again, we still can not use pandas module. The reason is same as we use <code>rm -rf /</code>.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h2><p><code>docker build -t</code></p>
+<p><code>docker build</code> means builds and image from dockerfile</p>
+<p><code>.</code> means we want docker to build an image this directory in the current directory. </p>
+<p>It will look for the docker file and execute this docker file and we will create am image with <code>test</code> name</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109015809237.png" alt="image-20250109015809237"></p>
+<p>Create a new file called <code>pipeline.py</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109020156514.png" alt="image-20250109020156514"></p>
+<p>It actually works!</p>
+<p>now debug <code>pipeline.py</code>. Rebuild Dockerfile.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109020647005.png" alt="image-20250109020647005"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109020638144.png" alt="image-20250109020638144"></p>
+<p>If we give more arguments to docker, those paramaters will be pass.<img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250109020807957.png" alt="image-20250109020807957"></p>
+<h2 id="Postgres-command-line-for-Docker"><a href="#Postgres-command-line-for-Docker" class="headerlink" title="Postgres command line for Docker"></a>Postgres command line for Docker</h2><p>在 git bash 中执行代码，将其中的 <code>h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data</code> 替换为自己的存储路径。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124344024.png" alt="image-20250110124344024"></p>
+<figure class="highlight plaintext"><figcaption><span>bash</span></figcaption><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><font color="red"> 给环境加双引号 </font></p>
+</li>
+<li><p><font color="red"> windows 系统注意反斜线方向 </font></p>
+</li>
+<li><p><font color="red"> 空文件夹的问题也有遇到，但尝试评论中方案都未能解决，最后重装了 docker, 莫名其妙的好了 </font></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124325747.png" alt="image-20250110124325747"></p>
+</li>
+</ul>
+<h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a><strong>环境变量配置</strong></h3><ul>
+<li><code>-e POSTGRES_USER=&quot;root&quot;</code>：设置 PostgreSQL 容器内的默认数据库用户为 <code>root</code>。</li>
+<li><code>-e POSTGRES_PASSWORD=&quot;root&quot;</code>：设置 <code>root</code> 用户的密码为 <code>root</code>。</li>
+<li><code>-e POSTGRES_DB=&quot;ny_taxi&quot;</code>：设置容器内创建的默认数据库名称为 <code>ny_taxi</code>。</li>
+</ul>
+<h3 id="数据挂载"><a href="#数据挂载" class="headerlink" title="数据挂载"></a><strong>数据挂载</strong></h3><p><code>-v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot;</code>：将主机(host)上的路径 <code>h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data</code> 挂载到容器内的 <code>/var/lib/postgresql/data</code> 目录。使 PostgreSQL 容器的数据储存在主机中，防删。</p>
+<h3 id="端口映射"><a href="#端口映射" class="headerlink" title="端口映射"></a><strong>端口映射</strong></h3><ul>
+<li><code>-p 5432:5432</code>：将容器内的 PostgreSQL 默认端口（5432）映射到主机的 5432 端口。这样就能从主机访问容器中的 PostgreSQL 数据库。</li>
+</ul>
+<h3 id="容器镜像"><a href="#容器镜像" class="headerlink" title="容器镜像"></a><strong>容器镜像</strong></h3><ul>
+<li><code>postgres:13</code>：指定使用 <code>postgres</code> 镜像的版本 13 来启动容器。</li>
+</ul>
+<h2 id="pgcli"><a href="#pgcli" class="headerlink" title="pgcli"></a>pgcli</h2><p><font color="red"> 在 Powershell 中执行 </font></p>
+<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124238334.png" alt="image-20250110124238334"></p>
+<p>使用 <code>\dt</code> 查询目前有的表</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124452186.png" alt="image-20250110124452186"></p>
+<h2 id="Running-Jupyter-Notebook"><a href="#Running-Jupyter-Notebook" class="headerlink" title="Running Jupyter Notebook"></a>Running Jupyter Notebook</h2><h3 id="如何打开"><a href="#如何打开" class="headerlink" title="如何打开"></a>如何打开</h3><ol>
+<li><p>使用 git bash，输入 <code>jupyter notebook</code> 然后会通过默认浏览器打开(蛮方便诶)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124922140.png" alt="image-20250110124922140"></p>
+<ol start="2">
+<li>通过 anaconda 打开</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110124947569.png" alt="image-20250110124947569"></p>
+<h3 id="使用-jupyter-notebook"><a href="#使用-jupyter-notebook" class="headerlink" title="使用 jupyter notebook"></a>使用 jupyter notebook</h3><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110125241831.png" alt="image-20250110125241831"></p>
+<h2 id="Taxi-data"><a href="#Taxi-data" class="headerlink" title="Taxi data"></a>Taxi data</h2><h3 id="下载数据"><a href="#下载数据" class="headerlink" title="下载数据"></a>下载数据</h3><h4 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h4><ol>
+<li><p>首先我下载了 <code>wget.exe</code>, 地址: <a href="https://eternallybored.org/misc/wget/">https://eternallybored.org/misc/wget/</a></p>
+</li>
+<li><p>将 <code>wget.exe</code> 置于 <code>C:\Program Files\Git\mingw64\bin\</code> 目录下. 这里的下载目录根据自己安装 Git 时选择的目录来选择</p>
+</li>
+</ol>
+<h4 id="下载数据-1"><a href="#下载数据-1" class="headerlink" title="下载数据"></a>下载数据</h4><p><code>wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110135024819.png" alt="image-20250110135024819"></p>
+<h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p><code>gzip -d yellow_tripdata_2021-01.csv.gz</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110135153849.png" alt="image-20250110135153849"></p>
+<h3 id="查看数据"><a href="#查看数据" class="headerlink" title="查看数据"></a>查看数据</h3><p>节选前 100 条数据集查看</p>
+<p><code> head -n 100 yellow_tripdata_2021-01.csv &gt; yellow_head.csv</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110135733848.png" alt="image-20250110135733848"></p>
+<p>计算有多少行 <code>wc -l yellow_tripdata_2021-01.csv</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110141518670.png" alt="image-20250110141518670"></p>
+<h2 id="Reading-csv-with-pandas"><a href="#Reading-csv-with-pandas" class="headerlink" title="Reading csv with pandas"></a>Reading csv with pandas</h2><h3 id="pd-read"><a href="#pd-read" class="headerlink" title="pd.read()"></a><code>pd.read()</code></h3><p>导入并查看前 100 行，导入使用 <code>df = pd.read(&#39;yellow_tripdata_2021-01.csv&#39;)</code> 要确保读取的 csv 和.ipynb 文件在一个路径下，否则要用绝对路径调用 <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110142113388.png" alt="image-20250110142113388"></p>
+<h3 id="pd-io-sql-get-schema-df-name，con"><a href="#pd-io-sql-get-schema-df-name，con" class="headerlink" title="pd.io.sql.get_schema(df, name，con))"></a><code>pd.io.sql.get_schema(df, name，con))</code></h3><p>描述表格在 SQL 中的格式, 我们可以看到 <code>tpep_pickup_datetime</code> 在表中的额格式是 <code>timestamp</code>，所以用到了下面的 <code>function</code> 来转换 <code>pandas</code> 识别的格式 ![image-20250110143006298](E:\new_hexo\blog\source_posts\DE Zoomcamp w1.assets\image-20250110143006298.png) <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110144300725.png" alt="image-20250110144300725"> **<code>pd.io.sql.get_schema(df, name=&#39;yellow_taxi_data&#39;, con=engine)</code>**：</p>
+<ul>
+<li><code>df</code>：。<code>df</code> 表示希望在数据库中创建的表的数据。</li>
+<li><code>name=&#39;yellow_taxi_data&#39;</code>：为生成的 SQL 表指定表名为 <code>yellow_taxi_data</code>。</li>
+<li><code>con=engine</code>：数据库连接对象（<code>engine</code>），表明与 PostgreSQL 数据库的连接。SQLAlchemy <code>engine</code> 被用来执行与数据库的交互。</li>
+</ul>
+<p>**<code>get_schema</code>**：</p>
+<ul>
+<li>根据传入的 DataFrame 的列名、数据类型等信息生成一个对应的 SQL <code>CREATE TABLE</code> 语句。<u> 它不会执行 SQL，只是生成语句 </u>，可以将其输出并 <strong>手动执行或保存</strong> 到文件中。</li>
+</ul>
+<p>添加了 <code>con = engine</code> 参数</p>
+<h3 id="pd-to-datetime"><a href="#pd-to-datetime" class="headerlink" title="pd.to_datetime()"></a><code>pd.to_datetime()</code></h3><p>使用 <code>pd.to_datetime(df.tpep_pick_datetime)</code> 来将格式转换为 <code>datetime64</code> <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110142557817.png" alt="image-20250110142557817"></p>
+<p>修改数据格式：</p>
+<p><code>df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime) df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)</code><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110143201840.png" alt="image-20250110143201840"></p>
+<h3 id="create-engine"><a href="#create-engine" class="headerlink" title="create_engine()"></a>create_engine()</h3><p><code>engine = create_engine(&#39;postgresql://root:root@localhost:5432/ny_taxi&#39;)</code></p>
+<p><code>create_engine</code> 会创建一个 <strong>SQLAlchemy Engine</strong> 对象来表示与数据库的连接。通过这个 <code>engine</code>，可以执行 SQL 查询、读取数据、写入数据等操作</p>
+<h4 id="postgresql"><a href="#postgresql" class="headerlink" title="postgresql://"></a><strong><code>postgresql://</code></strong></h4><p>这是数据库的连接协议，告诉 SQLAlchemy 使用 PostgreSQL 数据库</p>
+<h4 id="root-root"><a href="#root-root" class="headerlink" title="root:root"></a><code>root:root</code></h4><p>这是数据库的用户名和密码，格式为 <code>username:password</code>。之前创建的用户名和密码都是 <code>root</code></p>
+<h4 id="localhost"><a href="#localhost" class="headerlink" title="localhost"></a><code>localhost</code></h4><p><code>localhost</code> 表示数据库在本地运行, 也就是 <code>pgcli</code> 执行 <code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code> 时候使用的 <code>-h</code> 参数</p>
+<h4 id="5432"><a href="#5432" class="headerlink" title="5432"></a><code>5432</code></h4><p>PostgreSQL 数据库的端口号</p>
+<h4 id="ny-taxi"><a href="#ny-taxi" class="headerlink" title="ny_taxi"></a><code>ny_taxi</code></h4><p>要连接的数据库的名称</p>
+<h3 id="pd-read-csv-…-iterator-True-chunksize-100000"><a href="#pd-read-csv-…-iterator-True-chunksize-100000" class="headerlink" title="pd.read_csv(…, iterator &#x3D; True, chunksize &#x3D; 100000)"></a>pd.read_csv(…, iterator &#x3D; True, chunksize &#x3D; 100000)</h3><p>介绍下 <code>df_iter = pd.read_csv(&#39;yellow_tripdata_2021-01.csv&#39;, iterator=True, chunksize=100000)</code></p>
+<p>**<code>iterator=True</code>**：</p>
+<ul>
+<li>告诉 <code>pandas</code> 返回一个迭代器，按块读取文件而不是一次性加载整个 CSV 文件</li>
+</ul>
+<p>**<code>chunksize=100000</code>**：</p>
+<ul>
+<li>这个参数指定每次读取的行数。这里是每次读取 100,000 行数据。逐块读取 CSV 文件，直到文件读取完毕</li>
+</ul>
+<h3 id="next"><a href="#next" class="headerlink" title="next()"></a>next()</h3><p><code>df = next(df_iter)</code></p>
+<p>&#96;&#96;next()<code> 是 Python 的内置函数，用于从迭代器中获取下一个元素。每次调用时，它会返回</code>.csv<code>文件中的下一个数据块.</code>df &#x3D; next(df_iter)<code>会将每次从迭代器取出的 100000 行数据赋值给</code>df<code>, 每次调用都会返回下一个数据块直到</code>.csv&#96;读取完毕</p>
+<h3 id="head"><a href="#head" class="headerlink" title="head()"></a>head()</h3><p><code>df.head()</code> 查看前 5 行数据，默认是 5，可以自行设置</p>
+<h3 id="df-to-sql"><a href="#df-to-sql" class="headerlink" title="df.to_sql()"></a>df.to_sql()</h3><p><code>df.head(n=0).to_sql(name=&#39;yellow_taxi_data&#39;, con=engine, if_exists=&#39;replace&#39;)</code> </p>
+<p><strong>这里的作用就是添加表头</strong></p>
+<p>**<code>df.head(n=0)</code>**：</p>
+<ul>
+<li><code>df.head()</code> 返回 DataFrame <code>df</code> 的前 0 行数据. 如果想要不同数量的行，可以通过 <code>df.head(n)</code> 来指定，例如 <code>df.head(10)</code></li>
+</ul>
+<p>**<code>.to_sql()</code>**：</p>
+<ul>
+<li><p><code>to_sql()</code> 将 DataFrame 的数据保存到 SQL 数据库中。它会根据 DataFrame 的结构生成相应的 <code>INSERT</code> 语句，将数据插入到数据库中</p>
+</li>
+<li><p><code>name=&#39;yellow_taxi_data&#39;</code>：指定要将数据保存到数据库中的表名，这里是 <code>yellow_taxi_data</code></p>
+</li>
+<li><p><code>con=engine</code>：指定数据库连接对象，这里使用的是 <code>SQLAlchemy</code> 创建的 <code>engine</code>。它表示与 PostgreSQL 数据库的连接</p>
+</li>
+<li><p><code>if_exists=&#39;replace&#39;</code>：这个参数指定当表已经存在时的处理方式</p>
+<p><code>&#39;replace&#39;</code> 会删除现有的表并重新创建一个新的表</p>
+<p><code>&#39;append&#39;</code> 追加数据而不是替换表</p>
+<p><code>&#39;fail&#39;</code> 不做任何操作使用</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110153156902.png" alt="image-20250110153156902"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110153119798.png" alt="image-20250110153119798"></p>
+</li>
+</ul>
+<h3 id="time"><a href="#time" class="headerlink" title="%time"></a>%time</h3><p><code>%time df.to_sql(name=&#39;yellow_taxi_data&#39;, con=engine, if_exists=&#39;append&#39;)</code></p>
+<p>查看将 <code>yellow_taxi_data</code> 添加到 engine 的时间，这里的 <code>yellow_taxi_data</code> 是我们之前切割过得 <code>100000</code> 行</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110153247129.png" alt="image-20250110153247129"></p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h4 id="No-module-named-‘psycopg2’"><a href="#No-module-named-‘psycopg2’" class="headerlink" title="No module named ‘psycopg2’"></a>No module named ‘psycopg2’</h4><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110143345096.png" alt="image-20250110143345096"></p>
+<p>解决方法：<code>pip install psycopg2</code> <img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110143526159.png" alt="image-20250110143526159"></p>
+<h4 id="StopIteration"><a href="#StopIteration" class="headerlink" title="StopIteration:"></a>StopIteration:</h4><p>只是说明迭代器 <code>df = next(df_iter)</code> 已经没有数据块可以继续读取了, 并非问题</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250110153900462.png" alt="image-20250110153900462"></p>
+<h1 id="1-2-3"><a href="#1-2-3" class="headerlink" title="1.2.3"></a>1.2.3</h1><p><em><strong>创建网络将两个 container 放在一个网络下</strong></em></p>
+<h2 id="docker-network-create-pg-network"><a href="#docker-network-create-pg-network" class="headerlink" title="docker network create pg-network"></a><code>docker network create pg-network</code></h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112111933713.png" alt="image-20250112111933713"></p>
+<h2 id="将-postgres-13-这个-container-放入网络"><a href="#将-postgres-13-这个-container-放入网络" class="headerlink" title="将 postgres: 13 这个 container 放入网络"></a>将 postgres: 13 这个 container 放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111235244485.png" alt="image-20250111235244485"></p>
+<h2 id="将-dpage-pgadmin4-这个-container-放入网络"><a href="#将-dpage-pgadmin4-这个-container-放入网络" class="headerlink" title="将 dpage&#x2F;pgadmin4 这个 container 放入网络"></a>将 dpage&#x2F;pgadmin4 这个 container 放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111235227245.png" alt="image-20250111235227245"></p>
+<h2 id="pgadmin-使用-query"><a href="#pgadmin-使用-query" class="headerlink" title="pgadmin 使用 query"></a>pgadmin 使用 query</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111235329737.png" alt="image-20250111235329737"></p>
+<h1 id="1-2-4"><a href="#1-2-4" class="headerlink" title="1.2.4"></a>1.2.4</h1><h2 id="将-ipynb-文件转换成-py-文件"><a href="#将-ipynb-文件转换成-py-文件" class="headerlink" title="将 .ipynb 文件转换成 .py 文件"></a>将 <code>.ipynb</code> 文件转换成 <code>.py</code> 文件</h2><p><code>jupyter nbconvert --to=script upload-data.ipynb</code></p>
+<ul>
+<li><p>**<code>jupyter nbcconvert</code> **</p>
+<p>是 <code>Jupyter</code> 的工具，用于将 <code>notebook</code> 转换为其他格式</p>
+</li>
+<li><p><strong><code>--to=script</code></strong></p>
+<p>指定转换目标为 <code>.py</code>, 这会将 Notebook 中的代码单元格提取并保存为 Python 脚本，同时将 Markdown 单元格和注释保留为脚本中的注释</p>
+</li>
+<li><p><strong><code>upload-data.ipynb</code></strong><br>指定要转换的 <code>Jupyter Notebook</code> 文件名，这里是 <code>upload-data.ipynb</code></p>
+</li>
+</ul>
+<h2 id="使用-parser-add-argument"><a href="#使用-parser-add-argument" class="headerlink" title="使用 parser.add_argument()"></a>使用 <code>parser.add_argument()</code></h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112122852378.png" alt="image-20250112122852378"></p>
+<p>图中这些参数, 在后续的使用中都是要在执行这个 <code>.py</code> 的时候输入的参数</p>
+<p>先设置临时环境变量，这是我们下载代码的 <code>url</code></p>
+<p><code>URL=&quot;https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz&quot;</code></p>
+<p>这里执行这个 <code>.py</code> 的指令是：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python ingest_data.py \</span><br><span class="line">--user=root \</span><br><span class="line">--password=root \</span><br><span class="line">--host=localhost \</span><br><span class="line">--port=<span class="number">5432</span> \</span><br><span class="line">--db=ny_taxi \</span><br><span class="line">--table_name=yellow_taxi_trips \</span><br><span class="line">--url=$&#123;URL&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行效果：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112123226841.png" alt="image-20250112123226841"></p>
+<p>这里有个坑，就是视频中用的是下载完直接 <code>.csv</code> 格式，而目前我们有的是 <code>.gz</code> 格式，所以在代码中加了</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> url.endswith(<span class="string">&#x27;.csv.gz&#x27;</span>):</span><br><span class="line">    csv_name = <span class="string">&#x27;output.csv.gz&#x27;</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    csv_name = <span class="string">&#x27;output.csv&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样如果传入的 <code>url</code> 是 <code>https://example.com/data.csv.gz</code>，那么 <code>csv_name</code> 会被设置为 <code>output.csv.gz</code>。如果传入的 <code>url</code> 是 <code>https://example.com/data.csv</code>，那么 <code>csv_name</code> 会被设置为 <code>output.csv</code></p>
+<p>后续 <code>pandas</code> 会根据文件扩展名来判断如何读取文件  </p>
+<h2 id="解释下Dockerfile"><a href="#解释下Dockerfile" class="headerlink" title="解释下Dockerfile"></a>解释下Dockerfile</h2><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FROM</span> python:<span class="number">3.9</span>.<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> apt-get install wget</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> pip install pandas sqlalchemy psycopg2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> ingest_data.py ingest_data.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="language-bash"> [ <span class="string">&quot;python&quot;</span>, <span class="string">&quot;ingest_data.py&quot;</span> ]</span></span><br></pre></td></tr></table></figure>
+
+<p><code>RUN pip install pandas sqlalchemy psycopg2</code></p>
+<p>基于我们在<code>python</code>文件中需要使用<code>sqlalchemy</code>和<code>psycopg2</code>这两个库,所以需要在这里下载<code>dependency</code></p>
+<h2 id="构建Dockerfile并执行"><a href="#构建Dockerfile并执行" class="headerlink" title="构建Dockerfile并执行"></a>构建Dockerfile并执行</h2><p>在Dockerfile所在的目录下执行</p>
+<p><code>docker build -t taxi_ingest:v001 .</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113223148218.png" alt="image-20250113223148218"></p>
+<p>构建完成后执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">docker run -it \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  taxi_ingest:v001 \</span><br><span class="line">  --user=root \</span><br><span class="line">  --password=root \</span><br><span class="line">  --host=pg-database \</span><br><span class="line">  --port=5432 \</span><br><span class="line">  --db=ny_taxi \</span><br><span class="line">  --table_name=yellow_taxi_trips \</span><br><span class="line">  --url=$&#123;URL&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113231929742.png" alt="image-20250113231929742"></p>
+<blockquote>
+<p>此处有坑不要根据视频来填写<code> --host=localhost \</code>会产生报错<code>psycopg2.OperationalError: could not connect to server: Connection refused Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting TCP/IP connections on port 5432?</code><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113231439723.png" alt="image-20250113231439723"></p>
+</blockquote>
+<h2 id="HTTP-server-ipconfig"><a href="#HTTP-server-ipconfig" class="headerlink" title="HTTP server + ipconfig"></a>HTTP server + ipconfig</h2><p>git bash中输入<code>python -m httpm.server</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113233803162.png" alt="image-20250113233803162"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113233848603.png" alt="image-20250113233848603"></p>
+<p>使用<code>ipconfig</code>查询地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250113234327973.png" alt="image-20250113234327973"></p>
+<p>之后可以将本地的这个<code>.csv</code>的<code>URL</code>更新为环境变量中的<code>URL</code>值,即</p>
+<p><code>URL=&quot;http://192.168.64.1:8000/yellow_tripdata_2021-01.csv.gz&quot;</code></p>
+<p>使用之前同样的指令，这样下载数据会变快</p>
+<h1 id="1-2-5"><a href="#1-2-5" class="headerlink" title="1.2.5"></a>1.2.5</h1><h2 id="Docker-Compose"><a href="#Docker-Compose" class="headerlink" title="Docker Compose"></a>Docker Compose</h2>]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 2-0 Arsenal</title>
+    <url>/archives/2842d7b1.html</url>
+    <content><![CDATA[<p>Will meet Gunner again.</p>
+<p>Wish we could do better.</p>
+<p>It is hard to get point with the suspended Fabian Schär and Bruno Guimarães. Gordon got hurt after vs TOT. But, all the best!</p>
+<p>Got first leg win! Well done! Isak &amp; Gordon done the excellent job!</p>
+<p>Here we go, St James’ Park!</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108120608231.png" alt="image-20250108120608231"></p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>EFL Cup</tag>
+        <tag>Football</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 2-0 Manchester United</title>
+    <url>/archives/af93d8fc.html</url>
+    <content><![CDATA[<p>I feel that the mental state of Manchester United players is very low. It is hard to imagine that a big 6 team would buy such low-level players. For a moment, I don’t know whether it is a problem of the players’ professional attitude or a problem of the uniform team.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107222230867.png" alt="image-20250107222230867"></p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>Football</tag>
+        <tag>PL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 2-1 Tottenham</title>
+    <url>/archives/c6cad3a0.html</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107191811850.png" alt="image-20250107191811850"></p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>Football</tag>
+        <tag>PL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 3-0 Villa</title>
+    <url>/archives/d618897d.html</url>
+    <content><![CDATA[<p>Got a big win! 3-0!!! </p>
+<p>What a nice boxing day!</p>
+<p>With Duran‘s red card.  </p>
+<p>ez win :)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/win-1735233411236-3.jpg" alt="win"></p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>Football</tag>
+        <tag>PL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 3-1 Bromley</title>
+    <url>/archives/82c86303.html</url>
+    <content><![CDATA[<p>What a game tonight! I went in expecting a routine win, especially with us on a seven-match winning streak, but Bromley had other ideas.</p>
+<p>They stunned us early. Just eight minutes in, their keeper booted the ball upfield, and somehow Corey Whitely flicked it on to Cameron Congreve even though he was surrounded by three of our players. Congreve skipped past Miley like he wasn’t even there and curled one past Dubravka. Dubravka got a hand to it, but it wasn’t enough. The away fans went wild, chanting, “Who are ya?” It was painful to watch.</p>
+<p>A few minutes later, things almost got worse. Lloyd Kelly under-hit a pass, and their wing-back, Danny Imray, pounced on it. He flew down the right side and smashed a shot just wide. Honestly, my heart stopped for a second.</p>
+<p>Thankfully, Howe used the drinks break to regroup. Whatever he said worked, because we finally equalized. Miley played a killer pass to Osula, who rounded their keeper but got tackled at the last second. The ball bounced back to Miley, though, and he smashed it from 25 yards. Absolute rocket. No chance for their keeper. Miley didn’t even celebrate – just grabbed the ball and ran back to the center circle.</p>
+<p>Even though we had most of the ball (86% or something crazy), Bromley’s defense held up really well in the first half. It was frustrating, but Howe made some smart changes at halftime. Bruno and Gordon came on, and you could feel the difference right away.</p>
+<p>Early in the second half, Targett got fouled in the box. The ref pointed to the spot, and Gordon stepped up. He buried it, cool as you like, sending their keeper the wrong way. That was the turning point.</p>
+<p>The third goal was pure class. Bruno played a perfect through ball to Osula, who ran down the right, did a couple of stepovers to beat their defender, and curled it into the far corner. His first goal for us – and what a way to get it!</p>
+<p>We finished 3-1, and honestly, it felt like a relief more than anything. Bromley gave us a real scare, but in the end, we showed our quality.</p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>Football</tag>
+        <tag>PL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Singapore</title>
+    <url>/archives/3d2608.html</url>
+    <content><![CDATA[<h2 id="Reason-for-the-travel"><a href="#Reason-for-the-travel" class="headerlink" title="Reason for the travel"></a>Reason for the travel</h2><p>September 2024. I am planning to return to China.Since long time studied and worked in Auckland, it is quite excited for me. Octomber, Air China sent a notification that the plane was delayed. I decided change the schedule and transfer to Singapore. Due to this reason, got the chance to visit Singapore in one day.</p>
+<h2 id="Visiting-rote"><a href="#Visiting-rote" class="headerlink" title="Visiting rote"></a>Visiting rote</h2><ul>
+<li>Changi Airport </li>
+<li>Raffles Palce -&gt; Merlion Park</li>
+<li>Suntec City -&gt; Ya Kun Kaya Toast</li>
+<li>Botanic Gardens</li>
+<li>Orchard</li>
+<li>Harboutfont -&gt; Sentosa Express</li>
+<li>ChinaTown(牛车水)</li>
+</ul>
+<h2 id="Memories"><a href="#Memories" class="headerlink" title="Memories"></a>Memories</h2><p>the flight was taken off on 3rd November at night. Sunday night, nice to have a chance to see the Premier League on the flight. MUN vs CHE. Come on Chelsea~~<br><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/MUNvsCHE.jpg" alt="Man united vs Chelsea|center|400"><br> Arrive in the morning, Luckily, the flight arrives early at around 7 am. I was surprised that Changi Airport was such huge and beautiful. Can’t remove my eyes. Also with so many stores. Can not imaging for me tbh. Auckland airport was tine size lol~~~<br><img src="/./img/arrive.jpg" alt="Arrive Singapore|center|400"><br>The cute Singapore Airlines bear.<br><img src="/./img/bear.jpg" alt="Singapore Airline Bear|center|400"><br>After a long flight, finally able to leave the plane and walk in Singapore Changi Airport. I was comparing it with Auckland Airport in mind, then I thought why I am doing this, they are simply not on the same level :)<br><img src="/./img/singapore_airport.jpg" alt="Arrive Changi Airport|center|400"></p>
+]]></content>
+      <categories>
+        <category>Travel</category>
+        <category>Asia</category>
+      </categories>
+      <tags>
+        <tag>Travel</tag>
+        <tag>Asia</tag>
+        <tag>Singapore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>挂梯子后git clone报错 -- 已解决</title>
+    <url>/archives/d5515ca9.html</url>
+    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用代理后，会造成Github的clone和push等功能无法正常使用，报错如下所示</p>
+<p><code>fatal: unable to access &#39;https://github.com/sige5193/bittly.git/&#39;: Failed to connect to github.com port 443 after 21095 ms: Couldn&#39;t connect to server</code></p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
+<li><ol>
+<li>检查本机代理端口(待补图)：</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>Setting -&gt; Network &amp; internet -&gt; Proxy -&gt; Use a proxy server -&gt; Edit -&gt; Port<br>当前设备端口 <em>33210</em></p>
+</blockquote>
+<ul>
+<li>2.修改Git代理配置：</li>
+</ul>
+<blockquote>
+<p>使用上述端口id <em>33210</em> 打开git bash进行配置<br>git config –global http.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a><br>git config –global https.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a></p>
+</blockquote>
+<ul>
+<li>3.配置完成后即可进行clone</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Git</tag>
+        <tag>Fixed</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-post插入图片deploy后无法正常显示 - 已解决</title>
+    <url>/archives/ba39c0e4.html</url>
+    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用<code>npm install hexo-asset-image</code>后，即使在config.yml中设置 <code>post_asset_folder: true</code>，还是无法在网页中显示图片(由于之前问题没有截图，使用网上UP复现图片)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/post_error_image.png" alt="error image"></p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
+<li><ol>
+<li>卸载旧的 hexo-asset-image</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>npm uninstall hexo-asset-image</p>
+</blockquote>
+<ul>
+<li><ol start="2">
+<li>使用如下命令下载 hexo-asset-image</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>npm install <a href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a></p>
+</blockquote>
+<ul>
+<li><ol start="3">
+<li>下载完后一直使用相对路径进行图片引用(原因未知，但不报错)</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>例如:<br>source<br>****_posts<br>********demo<br>********demo1<br>************1.jpg<br>********demo1.md<br>********demo.md<br><code>其中demo1和demo是使用hexo n demo &amp;&amp; hexo n demo1创建文件时生成的文件夹，同时还有demo1.md和demo.md生成。在demo1.md中引用图片时，使用![Setting image name](./demo1/1.jpg)</code></p>
+</blockquote>
+<ul>
+<li><ol start="4">
+<li>写完后正常运行<code>hexo cleam &amp;&amp; hexo g &amp;&amp; hexl d</code></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>注：当前可以将图片直接放在.&#x2F;source&#x2F;img&#x2F;文件夹下，如果没有该文件夹可以自行创建，之后使用如下语法调用图片<code>![](./img/xxx.png)</code></li>
+</ol>
+</li>
+</ul>
+<p><img src="/" alt="Technology"></p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Fixed</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/1e2fbb3d.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="打开git-bash运行postgres-13"><a href="#打开git-bash运行postgres-13" class="headerlink" title="打开git bash运行postgres:13"></a>打开git bash运行postgres:13</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<h2 id="打开PowerShell"><a href="#打开PowerShell" class="headerlink" title="打开PowerShell"></a>打开PowerShell</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231709168.png" alt="image-20250111231709168"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>pip install lxml</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>python -m pip install openpyxl</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
+<blockquote>
+<p>解决方案</p>
+<p><code>pip install DrissionPage </code></p>
+</blockquote>
+<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
+<blockquote>
+<p> 解决方案</p>
+<p>pip install scikit-learn</p>
+</blockquote>
+<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
+<blockquote>
+<p>解决方案</p>
+<p>pip install tensorflow</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>究极进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/1fb934fd.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
+<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
+<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
+<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
+<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
+<h2 id="执行python脚本加载数据"><a href="#执行python脚本加载数据" class="headerlink" title="执行python脚本加载数据"></a>执行python脚本加载数据</h2><p>先设置临时环境变量，这是我们下载代码的 <code>url</code></p>
+<p><code>URL=&quot;https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz&quot;</code></p>
+<p>这里执行这个 <code>.py</code> 的指令是：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python ingest_data.py \</span><br><span class="line">--user=root \</span><br><span class="line">--password=root \</span><br><span class="line">--host=localhost \</span><br><span class="line">--port=<span class="number">5432</span> \</span><br><span class="line">--db=ny_taxi \</span><br><span class="line">--table_name=yellow_taxi_trips \</span><br><span class="line">--url=$&#123;URL&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行效果：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112123226841.png" alt="image-20250112123226841"></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/42d699b3.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
+<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
+<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
+<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
+<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>汇率抓取00 - 连载中</title>
+    <url>/archives/6a573e21.html</url>
+    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>python环境部署 -&gt; 抓取当日汇率 -&gt; 抓取过去一年汇率 -&gt; 数据清洗 -&gt; 进行预测 -&gt; 整合资源</p>
+<h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>使用<strong>PyCharm</strong>，进入后选择<strong>Interpreter</strong>，可以选择new,然后自行安装所需要的module。本文使用如下的库</p>
+<p><code>(.venv) PS G:\nzd&gt; pip install BeautifulSoup4</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install pandas</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install lxml</code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install DrissionPage </code></p>
+<p><code>(.venv) PS G:\nzd&gt; pip install numpy</code></p>
+<h2 id="编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）"><a href="#编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）" class="headerlink" title="编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）"></a>编写脚本，抓取当日汇率（初步探索，后续不会继续使用这段代码）</h2><p>代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line">name=[]</span><br><span class="line">xianchao_buy_price=[]</span><br><span class="line">xianchao_sell_price=[]</span><br><span class="line">xianhui_buy_price=[]</span><br><span class="line">xianhui_sell_price=[]</span><br><span class="line">date_waihui=[]</span><br><span class="line">time_waihui=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">	<span class="comment">#这个网址的第一页跟其他页的格式稍微有区别，于是做了以下的判断。从0到9对应不同时间的汇率</span></span><br><span class="line">    <span class="keyword">if</span> i==<span class="number">0</span>:</span><br><span class="line">        url = urlopen(<span class="string">&#x27;http://www.boc.cn/sourcedb/whpj/&#x27;</span>) <span class="comment"># 打开html并获取内容</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 从网页看到共10页，所以用index1-9来进行匹配，获取全部的数据</span></span><br><span class="line">        url = urlopen(<span class="string">&#x27;http://www.boc.cn/sourcedb/whpj/index_&#123;&#125;.html&#x27;</span>.<span class="built_in">format</span>(i)) </span><br><span class="line">        web = url.read()</span><br><span class="line">        <span class="comment"># 用 BeautifulSoup 解析网页内容，指定解析器为 lxml</span></span><br><span class="line">        bs_obj = BeautifulSoup(web, features=<span class="string">&#x27;lxml&#x27;</span>)</span><br><span class="line">        <span class="comment"># 在检查中进行搜索，这是第二个table,于是index用了1来选取之后抓取的数据所在的表</span></span><br><span class="line">        t = bs_obj.find_all(<span class="string">&#x27;table&#x27;</span>)[<span class="number">1</span>]</span><br><span class="line">        <span class="comment"># 这是抓取所有的表格中的内容</span></span><br><span class="line">        all_tr = t.find_all(<span class="string">&#x27;tr&#x27;</span>)</span><br><span class="line">        <span class="comment"># 删掉第一行那行title</span></span><br><span class="line">        all_tr.pop(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">for</span> r <span class="keyword">in</span> all_tr:</span><br><span class="line">            all_td=r.find_all(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;新西兰元&#x27;</span> <span class="keyword">or</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;美元&#x27;</span> <span class="keyword">or</span> all_td[<span class="number">0</span>].text == <span class="string">&#x27;澳大利亚元&#x27;</span>:</span><br><span class="line">                name.append(all_td[<span class="number">0</span>].text)</span><br><span class="line">                xianhui_buy_price.append(all_td[<span class="number">1</span>].text)</span><br><span class="line">                xianhui_sell_price.append(all_td[<span class="number">3</span>].text)</span><br><span class="line">                xianchao_sell_price.append(all_td[<span class="number">4</span>].text)</span><br><span class="line">                xianchao_buy_price.append(all_td[<span class="number">2</span>].text)</span><br><span class="line">                date_waihui.append(all_td[<span class="number">6</span>].text)</span><br><span class="line">                time_waihui.append(all_td[<span class="number">7</span>].text)</span><br><span class="line"><span class="comment">#抓取的目录，假如还想抓取其他字段的话，新增空列表再append就可以。但目前这个表只有这些字段。</span></span><br><span class="line">test = pd.DataFrame(&#123;<span class="string">&#x27;货币名称&#x27;</span>: name,</span><br><span class="line">                     <span class="string">&#x27;发布日期&#x27;</span>: date_waihui,</span><br><span class="line">                     <span class="string">&#x27;发布时间&#x27;</span>: time_waihui,</span><br><span class="line">                     <span class="string">&#x27;现钞买入价&#x27;</span>: xianchao_buy_price,</span><br><span class="line">                     <span class="string">&#x27;现钞卖出价&#x27;</span> : xianchao_sell_price,</span><br><span class="line">                     <span class="string">&#x27;现汇买入价&#x27;</span>: xianhui_buy_price,</span><br><span class="line">                     <span class="string">&#x27;现汇卖出价&#x27;</span>: xianhui_sell_price&#125;)</span><br><span class="line">test.to_excel(<span class="string">r&#x27;E:\change_rate_spider\waihui.xlsx&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）"><a href="#抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）" class="headerlink" title="抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）"></a>抓取过去一年汇率（每天都有很多条，当前卡在中行的验证码，每次手动输入…确实很蠢但没有深入探索如何自动输入）</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> DrissionPage <span class="keyword">import</span> ChromiumPage</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_table</span>(<span class="params">page</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;解析页面中的表格数据&quot;&quot;&quot;</span></span><br><span class="line">    soup = BeautifulSoup(page.html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    target_div = soup.find(<span class="string">&#x27;div&#x27;</span>, class_=<span class="string">&#x27;BOC_main publish&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> target_div:</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到指定的表格容器&quot;</span>)</span><br><span class="line">    tbody_tag = target_div.find(<span class="string">&#x27;tbody&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> tbody_tag:</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到表格数据&quot;</span>)</span><br><span class="line"></span><br><span class="line">    tr_tags = tbody_tag.find_all(<span class="string">&#x27;tr&#x27;</span>)</span><br><span class="line">    data_list = []</span><br><span class="line">    <span class="keyword">for</span> tr <span class="keyword">in</span> tr_tags:</span><br><span class="line">        td_tags = tr.find_all(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(td_tags) == <span class="number">7</span>:</span><br><span class="line">            row_data = [td.text.strip() <span class="keyword">for</span> td <span class="keyword">in</span> [td_tags[<span class="number">6</span>], td_tags[<span class="number">1</span>], td_tags[<span class="number">3</span>], td_tags[<span class="number">5</span>]]]</span><br><span class="line">            data_list.append(row_data)</span><br><span class="line">    <span class="keyword">return</span> data_list</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_total_pages</span>(<span class="params">page</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;获取总页数&quot;&quot;&quot;</span></span><br><span class="line">    soup = BeautifulSoup(page.html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    paginator = soup.select_one(<span class="string">&#x27;#list_navigator ol&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> paginator:</span><br><span class="line">        pages = paginator.find_all(<span class="string">&#x27;li&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> li <span class="keyword">in</span> pages:</span><br><span class="line">            <span class="comment"># 找到包含总页数信息的 &lt;li&gt;</span></span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;共&#x27;</span> <span class="keyword">in</span> li.text <span class="keyword">and</span> <span class="string">&#x27;页&#x27;</span> <span class="keyword">in</span> li.text:</span><br><span class="line">                <span class="comment"># 提取数字部分</span></span><br><span class="line">                total_pages = <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(<span class="built_in">filter</span>(<span class="built_in">str</span>.isdigit, li.text)))</span><br><span class="line">                <span class="keyword">return</span> total_pages</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到总页数信息&quot;</span>)</span><br><span class="line">    <span class="keyword">raise</span> ValueError(<span class="string">&quot;未找到页码导航栏&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
+      </tags>
+  </entry>
+</search>
