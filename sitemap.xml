@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wli806.github.io/archives/2842d7b1.html</loc>
+    
+    <lastmod>2025-01-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wli806.github.io/archives/1e2fbb3d.html</loc>
     
     <lastmod>2025-01-13</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://wli806.github.io/archives/af93d8fc.html</loc>
-    
-    <lastmod>2025-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/archives/2842d7b1.html</loc>
     
     <lastmod>2025-01-13</lastmod>
     
@@ -201,7 +201,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
+    <loc>https://wli806.github.io/tags/PL/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -215,7 +215,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/PL/</loc>
+    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -322,14 +322,14 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Travel/Asia/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -343,7 +343,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
+    <loc>https://wli806.github.io/categories/Travel/Asia/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
