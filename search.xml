@@ -314,13 +314,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Newcastle 3-0 Villa</title>
-    <url>/archives/d618897d.html</url>
-    <content><![CDATA[<p>Got a big win! 3-0!!! </p>
-<p>What a nice boxing day!</p>
-<p>With Duran‘s red card.  </p>
-<p>ez win :)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/win-1735233411236-3.jpg" alt="win"></p>
+    <title>Newcastle 3-1 Bromley</title>
+    <url>/archives/82c86303.html</url>
+    <content><![CDATA[<p>What a game tonight! I went in expecting a routine win, especially with us on a seven-match winning streak, but Bromley had other ideas.</p>
+<p>They stunned us early. Just eight minutes in, their keeper booted the ball upfield, and somehow Corey Whitely flicked it on to Cameron Congreve even though he was surrounded by three of our players. Congreve skipped past Miley like he wasn’t even there and curled one past Dubravka. Dubravka got a hand to it, but it wasn’t enough. The away fans went wild, chanting, “Who are ya?” It was painful to watch.</p>
+<p>A few minutes later, things almost got worse. Lloyd Kelly under-hit a pass, and their wing-back, Danny Imray, pounced on it. He flew down the right side and smashed a shot just wide. Honestly, my heart stopped for a second.</p>
+<p>Thankfully, Howe used the drinks break to regroup. Whatever he said worked, because we finally equalized. Miley played a killer pass to Osula, who rounded their keeper but got tackled at the last second. The ball bounced back to Miley, though, and he smashed it from 25 yards. Absolute rocket. No chance for their keeper. Miley didn’t even celebrate – just grabbed the ball and ran back to the center circle.</p>
+<p>Even though we had most of the ball (86% or something crazy), Bromley’s defense held up really well in the first half. It was frustrating, but Howe made some smart changes at halftime. Bruno and Gordon came on, and you could feel the difference right away.</p>
+<p>Early in the second half, Targett got fouled in the box. The ref pointed to the spot, and Gordon stepped up. He buried it, cool as you like, sending their keeper the wrong way. That was the turning point.</p>
+<p>The third goal was pure class. Bruno played a perfect through ball to Osula, who ran down the right, did a couple of stepovers to beat their defender, and curled it into the far corner. His first goal for us – and what a way to get it!</p>
+<p>We finished 3-1, and honestly, it felt like a relief more than anything. Bromley gave us a real scare, but in the end, we showed our quality.</p>
 ]]></content>
       <categories>
         <category>NUFC</category>
@@ -333,16 +336,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Newcastle 3-1 Bromley</title>
-    <url>/archives/82c86303.html</url>
-    <content><![CDATA[<p>What a game tonight! I went in expecting a routine win, especially with us on a seven-match winning streak, but Bromley had other ideas.</p>
-<p>They stunned us early. Just eight minutes in, their keeper booted the ball upfield, and somehow Corey Whitely flicked it on to Cameron Congreve even though he was surrounded by three of our players. Congreve skipped past Miley like he wasn’t even there and curled one past Dubravka. Dubravka got a hand to it, but it wasn’t enough. The away fans went wild, chanting, “Who are ya?” It was painful to watch.</p>
-<p>A few minutes later, things almost got worse. Lloyd Kelly under-hit a pass, and their wing-back, Danny Imray, pounced on it. He flew down the right side and smashed a shot just wide. Honestly, my heart stopped for a second.</p>
-<p>Thankfully, Howe used the drinks break to regroup. Whatever he said worked, because we finally equalized. Miley played a killer pass to Osula, who rounded their keeper but got tackled at the last second. The ball bounced back to Miley, though, and he smashed it from 25 yards. Absolute rocket. No chance for their keeper. Miley didn’t even celebrate – just grabbed the ball and ran back to the center circle.</p>
-<p>Even though we had most of the ball (86% or something crazy), Bromley’s defense held up really well in the first half. It was frustrating, but Howe made some smart changes at halftime. Bruno and Gordon came on, and you could feel the difference right away.</p>
-<p>Early in the second half, Targett got fouled in the box. The ref pointed to the spot, and Gordon stepped up. He buried it, cool as you like, sending their keeper the wrong way. That was the turning point.</p>
-<p>The third goal was pure class. Bruno played a perfect through ball to Osula, who ran down the right, did a couple of stepovers to beat their defender, and curled it into the far corner. His first goal for us – and what a way to get it!</p>
-<p>We finished 3-1, and honestly, it felt like a relief more than anything. Bromley gave us a real scare, but in the end, we showed our quality.</p>
+    <title>Newcastle 3-0 Villa</title>
+    <url>/archives/d618897d.html</url>
+    <content><![CDATA[<p>Got a big win! 3-0!!! </p>
+<p>What a nice boxing day!</p>
+<p>With Duran‘s red card.  </p>
+<p>ez win :)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/win-1735233411236-3.jpg" alt="win"></p>
 ]]></content>
       <categories>
         <category>NUFC</category>
@@ -414,6 +414,117 @@
       </tags>
   </entry>
   <entry>
+    <title>抓取汇率遇到的坑</title>
+    <url>/archives/29056cd5.html</url>
+    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
+<blockquote>
+<p>解决方案： 发现是由于我没有安装库导致，</p>
+<p><code>pip install beautifulsoup4 </code></p>
+<p>安装成功后要在代码中import</p>
+<p><code>from bs4 import BeautifulSoup</code></p>
+</blockquote>
+<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
+<blockquote>
+<p>额…运行要用python xxx.py</p>
+</blockquote>
+<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>pip install lxml</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
+<blockquote>
+<p>解决方案：</p>
+<p><code>python -m pip install openpyxl</code></p>
+</blockquote>
+<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
+<blockquote>
+<p>解决方案</p>
+<p><code>pip install DrissionPage </code></p>
+</blockquote>
+<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
+<blockquote>
+<p> 解决方案</p>
+<p>pip install scikit-learn</p>
+</blockquote>
+<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
+<blockquote>
+<p>解决方案</p>
+<p>pip install tensorflow</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Python</tag>
+        <tag>spider</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>究极进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/1fb934fd.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
+<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
+<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
+<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
+<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
+<h2 id="执行python脚本加载数据"><a href="#执行python脚本加载数据" class="headerlink" title="执行python脚本加载数据"></a>执行python脚本加载数据</h2><p>先设置临时环境变量，这是我们下载代码的 <code>url</code></p>
+<p><code>URL=&quot;https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz&quot;</code></p>
+<p>这里执行这个 <code>.py</code> 的指令是：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python ingest_data.py \</span><br><span class="line">--user=root \</span><br><span class="line">--password=root \</span><br><span class="line">--host=localhost \</span><br><span class="line">--port=<span class="number">5432</span> \</span><br><span class="line">--db=ny_taxi \</span><br><span class="line">--table_name=yellow_taxi_trips \</span><br><span class="line">--url=$&#123;URL&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行效果：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112123226841.png" alt="image-20250112123226841"></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/1e2fbb3d.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="打开git-bash运行postgres-13"><a href="#打开git-bash运行postgres-13" class="headerlink" title="打开git bash运行postgres:13"></a>打开git bash运行postgres:13</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<h2 id="打开PowerShell"><a href="#打开PowerShell" class="headerlink" title="打开PowerShell"></a>打开PowerShell</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231709168.png" alt="image-20250111231709168"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-post插入图片deploy后无法正常显示 - 已解决</title>
     <url>/archives/ba39c0e4.html</url>
     <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用<code>npm install hexo-asset-image</code>后，即使在config.yml中设置 <code>post_asset_folder: true</code>，还是无法在网页中显示图片(由于之前问题没有截图，使用网上UP复现图片)</p>
@@ -465,117 +576,6 @@
         <tag>Hexo</tag>
         <tag>Fixed</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>抓取汇率遇到的坑</title>
-    <url>/archives/29056cd5.html</url>
-    <content><![CDATA[<h2 id="报错BeautifulSoup函数not-defined"><a href="#报错BeautifulSoup函数not-defined" class="headerlink" title="报错BeautifulSoup函数not defined"></a>报错BeautifulSoup函数not defined</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200103625.png" alt="BeautifulSoup"></p>
-<blockquote>
-<p>解决方案： 发现是由于我没有安装库导致，</p>
-<p><code>pip install beautifulsoup4 </code></p>
-<p>安装成功后要在代码中import</p>
-<p><code>from bs4 import BeautifulSoup</code></p>
-</blockquote>
-<h2 id="使用run-xxx-py报错"><a href="#使用run-xxx-py报错" class="headerlink" title="使用run xxx.py报错"></a>使用run xxx.py报错</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224200630272.png" alt="run py"></p>
-<blockquote>
-<p>额…运行要用python xxx.py</p>
-</blockquote>
-<h2 id="报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml"><a href="#报错bs4-FeatureNotFound-Couldn’t-find-a-tree-builder-with-the-features-you-requested-lxml" class="headerlink" title="报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml."></a>报错bs4.FeatureNotFound: Couldn’t find a tree builder with the features you requested: lxml.</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241224201012313.png" alt="lxml"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>pip install lxml</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘openpyxl’"><a href="#报错ModuleNotFoundError-No-module-named-‘openpyxl’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘openpyxl’"></a>报错ModuleNotFoundError: No module named ‘openpyxl’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225082727772.png" alt="openpyxl"></p>
-<blockquote>
-<p>解决方案：</p>
-<p><code>python -m pip install openpyxl</code></p>
-</blockquote>
-<h2 id="报错ModuleNotFoundError-No-module-named-‘DrissionPage’"><a href="#报错ModuleNotFoundError-No-module-named-‘DrissionPage’" class="headerlink" title="报错ModuleNotFoundError: No module named ‘DrissionPage’"></a>报错ModuleNotFoundError: No module named ‘DrissionPage’</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241225093836781.png" alt="DrissionPage"></p>
-<blockquote>
-<p>解决方案</p>
-<p><code>pip install DrissionPage </code></p>
-</blockquote>
-<h2 id="报错-sklearn-缺失"><a href="#报错-sklearn-缺失" class="headerlink" title="报错 sklearn 缺失"></a>报错 sklearn 缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226123723013.png" alt="image-20241226123723013"></p>
-<blockquote>
-<p> 解决方案</p>
-<p>pip install scikit-learn</p>
-</blockquote>
-<h2 id="报错TensorFlow缺失"><a href="#报错TensorFlow缺失" class="headerlink" title="报错TensorFlow缺失"></a>报错TensorFlow缺失</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20241226124257238.png" alt="image-20241226124257238"></p>
-<blockquote>
-<p>解决方案</p>
-<p>pip install tensorflow</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>Python</tag>
-        <tag>spider</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录Zoomcamp从0开启ny_taxi表的步骤</title>
-    <url>/archives/1e2fbb3d.html</url>
-    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
-<h2 id="打开git-bash运行postgres-13"><a href="#打开git-bash运行postgres-13" class="headerlink" title="打开git bash运行postgres:13"></a>打开git bash运行postgres:13</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
-
-<h2 id="打开PowerShell"><a href="#打开PowerShell" class="headerlink" title="打开PowerShell"></a>打开PowerShell</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231709168.png" alt="image-20250111231709168"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<p><code>pgcli -h localhost -p 5432 -u root -d ny_taxi</code></p>
-<p>DONE.</p>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>DE</tag>
-        <tag>Bootcamp</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>究极进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
-    <url>/archives/1fb934fd.html</url>
-    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
-<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
-<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
-
-<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
-<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
-
-<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
-<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
-<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
-<h2 id="执行python脚本加载数据"><a href="#执行python脚本加载数据" class="headerlink" title="执行python脚本加载数据"></a>执行python脚本加载数据</h2><p>先设置临时环境变量，这是我们下载代码的 <code>url</code></p>
-<p><code>URL=&quot;https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz&quot;</code></p>
-<p>这里执行这个 <code>.py</code> 的指令是：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python ingest_data.py \</span><br><span class="line">--user=root \</span><br><span class="line">--password=root \</span><br><span class="line">--host=localhost \</span><br><span class="line">--port=<span class="number">5432</span> \</span><br><span class="line">--db=ny_taxi \</span><br><span class="line">--table_name=yellow_taxi_trips \</span><br><span class="line">--url=$&#123;URL&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行效果：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112123226841.png" alt="image-20250112123226841"></p>
-<p>DONE.</p>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>DE</tag>
-        <tag>Bootcamp</tag>
-        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
