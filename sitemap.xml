@@ -180,7 +180,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/PL/</loc>
+    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -215,7 +215,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
+    <loc>https://wli806.github.io/tags/PL/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -250,7 +250,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/Git/</loc>
+    <loc>https://wli806.github.io/tags/Blog/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -264,7 +264,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/Blog/</loc>
+    <loc>https://wli806.github.io/tags/Git/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -322,13 +322,6 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
-    <lastmod>2025-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -337,6 +330,13 @@
   
   <url>
     <loc>https://wli806.github.io/categories/Travel/Asia/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

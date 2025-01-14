@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Newcastle 2-1 Tottenham</title>
-    <url>/archives/c6cad3a0.html</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107191811850.png" alt="image-20250107191811850"></p>
+    <title>Newcastle 2-0 Arsenal</title>
+    <url>/archives/2842d7b1.html</url>
+    <content><![CDATA[<p>Will meet Gunner again.</p>
+<p>Wish we could do better.</p>
+<p>It is hard to get point with the suspended Fabian Schär and Bruno Guimarães. Gordon got hurt after vs TOT. But, all the best!</p>
+<p>Got first leg win! Well done! Isak &amp; Gordon done the excellent job!</p>
+<p>Here we go, St James’ Park!</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108120608231.png" alt="image-20250108120608231"></p>
 ]]></content>
       <categories>
         <category>NUFC</category>
@@ -11,7 +16,7 @@
       </categories>
       <tags>
         <tag>NUFC</tag>
-        <tag>PL</tag>
+        <tag>EFL Cup</tag>
         <tag>Football</tag>
       </tags>
   </entry>
@@ -278,14 +283,10 @@
       </tags>
   </entry>
   <entry>
-    <title>Newcastle 2-0 Arsenal</title>
-    <url>/archives/2842d7b1.html</url>
-    <content><![CDATA[<p>Will meet Gunner again.</p>
-<p>Wish we could do better.</p>
-<p>It is hard to get point with the suspended Fabian Schär and Bruno Guimarães. Gordon got hurt after vs TOT. But, all the best!</p>
-<p>Got first leg win! Well done! Isak &amp; Gordon done the excellent job!</p>
-<p>Here we go, St James’ Park!</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250108120608231.png" alt="image-20250108120608231"></p>
+    <title>Newcastle 2-0 Manchester United</title>
+    <url>/archives/af93d8fc.html</url>
+    <content><![CDATA[<p>I feel that the mental state of Manchester United players is very low. It is hard to imagine that a big 6 team would buy such low-level players. For a moment, I don’t know whether it is a problem of the players’ professional attitude or a problem of the uniform team.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107222230867.png" alt="image-20250107222230867"></p>
 ]]></content>
       <categories>
         <category>NUFC</category>
@@ -294,7 +295,22 @@
       <tags>
         <tag>NUFC</tag>
         <tag>Football</tag>
-        <tag>EFL Cup</tag>
+        <tag>PL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Newcastle 2-1 Tottenham</title>
+    <url>/archives/c6cad3a0.html</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107191811850.png" alt="image-20250107191811850"></p>
+]]></content>
+      <categories>
+        <category>NUFC</category>
+        <category>2425</category>
+      </categories>
+      <tags>
+        <tag>NUFC</tag>
+        <tag>Football</tag>
+        <tag>PL</tag>
       </tags>
   </entry>
   <entry>
@@ -312,24 +328,8 @@
       </categories>
       <tags>
         <tag>NUFC</tag>
-        <tag>PL</tag>
         <tag>Football</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Newcastle 2-0 Manchester United</title>
-    <url>/archives/af93d8fc.html</url>
-    <content><![CDATA[<p>I feel that the mental state of Manchester United players is very low. It is hard to imagine that a big 6 team would buy such low-level players. For a moment, I don’t know whether it is a problem of the players’ professional attitude or a problem of the uniform team.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250107222230867.png" alt="image-20250107222230867"></p>
-]]></content>
-      <categories>
-        <category>NUFC</category>
-        <category>2425</category>
-      </categories>
-      <tags>
-        <tag>NUFC</tag>
         <tag>PL</tag>
-        <tag>Football</tag>
       </tags>
   </entry>
   <entry>
@@ -350,8 +350,8 @@
       </categories>
       <tags>
         <tag>NUFC</tag>
-        <tag>PL</tag>
         <tag>Football</tag>
+        <tag>PL</tag>
       </tags>
   </entry>
   <entry>
@@ -377,40 +377,6 @@
         <tag>Travel</tag>
         <tag>Asia</tag>
         <tag>Singapore</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>挂梯子后git clone报错 -- 已解决</title>
-    <url>/archives/d5515ca9.html</url>
-    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用代理后，会造成Github的clone和push等功能无法正常使用，报错如下所示</p>
-<p><code>fatal: unable to access &#39;https://github.com/sige5193/bittly.git/&#39;: Failed to connect to github.com port 443 after 21095 ms: Couldn&#39;t connect to server</code></p>
-<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
-<li><ol>
-<li>检查本机代理端口(待补图)：</li>
-</ol>
-</li>
-</ul>
-<blockquote>
-<p>Setting -&gt; Network &amp; internet -&gt; Proxy -&gt; Use a proxy server -&gt; Edit -&gt; Port<br>当前设备端口 <em>33210</em></p>
-</blockquote>
-<ul>
-<li>2.修改Git代理配置：</li>
-</ul>
-<blockquote>
-<p>使用上述端口id <em>33210</em> 打开git bash进行配置<br>git config –global http.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a><br>git config –global https.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a></p>
-</blockquote>
-<ul>
-<li>3.配置完成后即可进行clone</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Git</tag>
-        <tag>Fixed</tag>
       </tags>
   </entry>
   <entry>
@@ -463,8 +429,42 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Fixed</tag>
         <tag>Blog</tag>
+        <tag>Fixed</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>挂梯子后git clone报错 -- 已解决</title>
+    <url>/archives/d5515ca9.html</url>
+    <content><![CDATA[<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>使用代理后，会造成Github的clone和push等功能无法正常使用，报错如下所示</p>
+<p><code>fatal: unable to access &#39;https://github.com/sige5193/bittly.git/&#39;: Failed to connect to github.com port 443 after 21095 ms: Couldn&#39;t connect to server</code></p>
+<h2 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h2><ul>
+<li><ol>
+<li>检查本机代理端口(待补图)：</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>Setting -&gt; Network &amp; internet -&gt; Proxy -&gt; Use a proxy server -&gt; Edit -&gt; Port<br>当前设备端口 <em>33210</em></p>
+</blockquote>
+<ul>
+<li>2.修改Git代理配置：</li>
+</ul>
+<blockquote>
+<p>使用上述端口id <em>33210</em> 打开git bash进行配置<br>git config –global http.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a><br>git config –global https.proxy <a href="http://127.0.0.1:33210/">http://127.0.0.1:33210</a></p>
+</blockquote>
+<ul>
+<li>3.配置完成后即可进行clone</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Fixed</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -541,6 +541,37 @@
       </tags>
   </entry>
   <entry>
+    <title>进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
+    <url>/archives/42d699b3.html</url>
+    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
+<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
+<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
+<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
+<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
+<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
+<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
+<p>DONE.</p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>DE</tag>
+        <tag>Bootcamp</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>究极进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
     <url>/archives/1fb934fd.html</url>
     <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
@@ -566,37 +597,6 @@
 
 <p>执行效果：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112123226841.png" alt="image-20250112123226841"></p>
-<p>DONE.</p>
-]]></content>
-      <categories>
-        <category>Technology</category>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>DE</tag>
-        <tag>Bootcamp</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>进阶版- 记录Zoomcamp从0开启ny_taxi表的步骤</title>
-    <url>/archives/42d699b3.html</url>
-    <content><![CDATA[<h2 id="打开Docker-desktop"><a href="#打开Docker-desktop" class="headerlink" title="打开Docker desktop"></a>打开Docker desktop</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250111231339631.png" alt="image-20250111231339631"></p>
-<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><code>docker network create pg-network</code> 同名网络只能创建一次，后续若再次创建相同名称的网络，会提示<code>Error response from daemon: network with name pg-network already exists</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112005977.png" alt="image-20250112112005977"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112021924.png" alt="image-20250112112021924"></p>
-<h2 id="将postgres-13这个container放入网络"><a href="#将postgres-13这个container放入网络" class="headerlink" title="将postgres:13这个container放入网络"></a>将postgres:13这个container放入网络</h2><p><img src="E:\hexo\blog\source_posts\记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250111231530950.png" alt="image-20250111231530950"></p>
-<p>在<code> /h/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql</code>路径下执行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e POSTGRES_USER=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -e POSTGRES_DB=&quot;ny_taxi&quot; \</span><br><span class="line">  -v &quot;h:\data-engineering-zoomcamp\01-docker-terraform\2_docker_sql\ny_taxi_postgres_data:/var/lib/postgresql/data&quot; \</span><br><span class="line">  -p 5432:5432 \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pg-database \</span><br><span class="line">  postgres:13</span><br></pre></td></tr></table></figure>
-
-<p>创建完成后，第二次进入只需要启动容器<code>docker start pg-database</code></p>
-<h2 id="将dpage-pgadmin4这个container放入网络"><a href="#将dpage-pgadmin4这个container放入网络" class="headerlink" title="将dpage&#x2F;pgadmin4这个container放入网络"></a>将dpage&#x2F;pgadmin4这个container放入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112112909925.png" alt="image-20250112112909925"></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run -it \</span><br><span class="line">  -e PGADMIN_DEFAULT_EMAIL=&quot;admin@admin.com&quot; \</span><br><span class="line">  -e PGADMIN_DEFAULT_PASSWORD=&quot;root&quot; \</span><br><span class="line">  -p &quot;8080:80&quot; \</span><br><span class="line">  --network=pg-network \</span><br><span class="line">  --name pgadmin \</span><br><span class="line">  dpage/pgadmin4</span><br></pre></td></tr></table></figure>
-
-<p>创建完成后，第二次进入只需要启动容器<code>docker start pgadmin</code></p>
-<h2 id="打开localhost"><a href="#打开localhost" class="headerlink" title="打开localhost"></a>打开localhost</h2><p>浏览器中输入<code>localhost:8080</code>,输入前面创建<code>pgadmin</code>的邮箱和密码进入</p>
-<p><img src="E:\hexo\blog\source_posts\进阶版-记录Zoomcamp从0开启ny-taxi表的步骤.assets\image-20250112113041646.png" alt="image-20250112113041646"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wli806/picgo/img/image-20250112113224040.png" alt="image-20250112113224040"></p>
 <p>DONE.</p>
 ]]></content>
       <categories>
