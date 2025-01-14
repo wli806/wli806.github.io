@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://wli806.github.io/archives/de3a3bbb.html</loc>
+    
+    <lastmod>2025-01-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wli806.github.io/archives/2842d7b1.html</loc>
     
     <lastmod>2025-01-14</lastmod>
@@ -180,7 +189,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
+    <loc>https://wli806.github.io/tags/PL/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -194,7 +203,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/PL/</loc>
+    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -222,27 +231,6 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/Hexo/</loc>
-    <lastmod>2025-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/tags/Git/</loc>
-    <lastmod>2025-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/tags/Fixed/</loc>
-    <lastmod>2025-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wli806.github.io/tags/DE/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -258,6 +246,27 @@
   
   <url>
     <loc>https://wli806.github.io/tags/Docker/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/Hexo/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/Git/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/tags/Fixed/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -322,13 +331,6 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
-    <lastmod>2025-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wli806.github.io/categories/Technology/Docker/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -336,7 +338,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -344,6 +346,13 @@
   
   <url>
     <loc>https://wli806.github.io/categories/Technology/Hexo/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
     <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
