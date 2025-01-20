@@ -11,6 +11,24 @@
   </url>
   
   <url>
+    <loc>https://wli806.github.io/archives/bb508ad3.html</loc>
+    
+    <lastmod>2025-01-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wli806.github.io/archives/82c86303.html</loc>
+    
+    <lastmod>2025-01-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wli806.github.io/archives/741a6ece.html</loc>
     
     <lastmod>2025-01-17</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>https://wli806.github.io/archives/de3a3bbb.html</loc>
-    
-    <lastmod>2025-01-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/archives/bb508ad3.html</loc>
     
     <lastmod>2025-01-17</lastmod>
     
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://wli806.github.io/archives/1e2fbb3d.html</loc>
-    
-    <lastmod>2025-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wli806.github.io/archives/82c86303.html</loc>
     
     <lastmod>2025-01-13</lastmod>
     
@@ -216,7 +216,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
+    <loc>https://wli806.github.io/tags/PL/</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -230,7 +230,7 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/tags/PL/</loc>
+    <loc>https://wli806.github.io/tags/EFL-Cup/</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -372,14 +372,14 @@
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wli806.github.io/categories/Technology/Python/</loc>
+    <loc>https://wli806.github.io/categories/Technology/Git/</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
